@@ -7,3 +7,4 @@
 ```
   $ rake db:create db:migrate db:test:prepare
 # probable-waddle
+# probable-waddle
