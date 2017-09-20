@@ -1,0 +1,26 @@
+.btn {
+  & {
+    background: #fff;
+    border: 1px solid #DCE7E9;
+    padding: 6px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #555459;
+  }
+
+  &:hover {
+    background: #30ada4;
+    border: 1px solid #30ada4;
+    color: #fff;
+  }
+
+  &.-huge {
+    padding: 16px 12px;
+  }
+
+  &.-transparent:hover {
+    color: #227097;
+    background: #fff;
+    border: 1px solid #DCE7E9;
+  }
+}

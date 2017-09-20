@@ -71,22 +71,26 @@ export default class ChatContainer extends Component {
         </div>
         <div 
           ref={ (el) => { contentRef = el } }
-          role="main-content">
+          role="main-content"
+          className="main-container">
           <aside>
-            <List 
-              onClickCreateChannel={ () => { this.toggleChannelForm(formRef, contentRef) } }
-              icon={ "hashtags" }
-              type={ "Public Channels" }
-              items={ publicChannels }/>
-            <List 
-              onClickCreateChannel={ () => { this.toggleChannelForm(formRef, contentRef) } }
-              icon={ "lock" }
-              type={ "Private Channels" }
-              items={ privateChannels }/>
-            <List 
-              type={ "Direct Messages" }
-              icon={ "circle" }
-              items={ users }/>
+            <div className="channel-container">
+              <List 
+                onClickCreateChannel={ () => { this.toggleChannelForm(formRef, contentRef) } }
+                icon={ "hashtags" }
+                type={ "Public Channels" }
+                items={ publicChannels }/>
+              <List 
+                onClickCreateChannel={ () => { this.toggleChannelForm(formRef, contentRef) } }
+                icon={ "lock" }
+                type={ "Private Channels" }
+                items={ privateChannels }/>
+              <List 
+                type={ "Direct Messages" }
+                className="direct-message"
+                icon={ "bullet" }
+                items={ users }/>
+            </div>
           </aside>
           <article>
           </article>

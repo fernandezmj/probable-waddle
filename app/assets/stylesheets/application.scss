@@ -2,20 +2,19 @@
  *= require_self
  */
 
+@import "components/*";
+
 * {
   margin: 0px;
   padding: 0px;
 } 
 
 body {
-  background: #ecf0f1;
+  /*background: #ecf0f1;*/
   font-family: "Source Sans Pro", sans-serif;
 }
 
-ul {
-  padding: 24px;
-}
 
-select {
-  width: 50% !important;
+li {
+  list-style: none;
 }

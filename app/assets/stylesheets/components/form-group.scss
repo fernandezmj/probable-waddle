@@ -1,0 +1,22 @@
+.form-group {
+  & {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  > label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555459;
+  }
+
+  > input {
+    padding: 8px;
+  }
+
+  > select {
+    background: #fff;
+    padding: 8px;
+  }
+}
