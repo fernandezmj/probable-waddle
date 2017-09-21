@@ -10,6 +10,7 @@ export default class Message extends Component {
         <p
           className="item" 
           key={message.id}>
+          <div className="name">Anonymouse</div>
           {message.content}
         </p>
         )

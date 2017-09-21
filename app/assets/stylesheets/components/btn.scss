@@ -1,16 +1,16 @@
 .btn {
   & {
-    background: #fff;
-    border: 1px solid #DCE7E9;
     padding: 6px;
     border-radius: 3px;
     font-weight: 600;
-    color: #555459;
+    border: 1px solid #30ada4;
+    background: #30ada4;
+    color: #fff;
   }
 
   &:hover {
-    background: #30ada4;
-    border: 1px solid #30ada4;
+    background: darken(#30ada4, 10%);
+    border: 1px solid darken(#30ada4, 10%);
     color: #fff;
   }
 
@@ -18,9 +18,15 @@
     padding: 16px 12px;
   }
 
-  &.-transparent:hover {
-    color: #227097;
+  &.-transparent{
     background: #fff;
     border: 1px solid #DCE7E9;
+    color: #555459;
+
+    &:hover {
+      color: #227097;
+      background: #fff;
+      border: 1px solid #DCE7E9;
+    }
   }
 }

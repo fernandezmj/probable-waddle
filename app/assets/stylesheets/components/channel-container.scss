@@ -1,10 +1,9 @@
 .channel-container {
   & {
-    max-width: 220px;
+    width: 220px;
     background: #4D394B;
     height: 100vh;
     color: rgb(202,196,201);
-    padding-left: 16px;
   }
 
   > .channels {
@@ -13,6 +12,7 @@
   
   > .channels > .list {
     padding-left: 16px;
+    cursor: pointer;
   }
 
   > .channels > .action {

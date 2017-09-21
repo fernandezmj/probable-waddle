@@ -20,12 +20,15 @@ export default class MessageInput extends Component {
     let msgRef
 
     return (
-      <form onSubmit= { (el) => { this.handleSubmit(el, { msgRef }) } }>
-        <label> Message </label>
-        <input 
-          ref ={ (msg) => { msgRef = msg} }
-          type="text"/>
-        <button type="submit"> submit </button>
+      <form className="message-input" onSubmit= { (el) => { this.handleSubmit(el, { msgRef }) } }>
+        <div className="form-group">
+          <input 
+            className="-large"
+            ref ={ (msg) => { msgRef = msg} }
+            placeholder="Input Message"
+            type="text"/>
+          <button className="btn -inherit" type="submit"> Submit </button>
+        </div>
       </form> 
     )
   }

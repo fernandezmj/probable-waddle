@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
+    position: relative;
   }
 
   > label {
@@ -13,10 +14,26 @@
 
   > input {
     padding: 8px;
+    border-style: none;
+    border-radius: 3px;
+    border: 1px solid #E8E8E8;
+
+    &.-large {
+      padding: 16px;
+    }
   }
 
   > select {
     background: #fff;
     padding: 8px;
+  }
+
+  > button {
+    &.-inherit {
+      position: absolute;
+      height: 100%;
+      right: 0;
+      padding: 8px 16px;
+    }
   }
 }

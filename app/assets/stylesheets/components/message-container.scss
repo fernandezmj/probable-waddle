@@ -1,0 +1,22 @@
+.message-container {
+  & {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 0 16px;
+    width: 100%;
+  }
+
+  > .message {
+    border-top: 1px solid #E8E8E8;
+    padding-left: 16px;
+  }
+
+  > .message > .item {
+    padding: 8px 0;
+  }
+
+  > .message > .item > .name {
+    font-weight: 600;
+  }
+}
