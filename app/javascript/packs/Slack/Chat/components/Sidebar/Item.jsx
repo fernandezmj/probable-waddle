@@ -5,7 +5,10 @@ export default class Item extends Component {
   render() {
     return (
       <li className="item">
-        { this.props.name }
+        <div 
+          onClick = { (activeChannel) => this.props.current(this.props.name) } >
+          { this.props.name }
+        </div>
       </li>
     )
   }

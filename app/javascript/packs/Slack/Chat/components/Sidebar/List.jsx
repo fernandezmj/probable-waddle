@@ -5,14 +5,14 @@ import Item from "./Item";
 
 export default class List extends Component {
   renderUsers() {
-    const { items } = this.props
+    const { items, current } = this.props
 
     return items.map( (item) => {
-      console.log(item.users)
       return (
         <Item
           key={ item.id }
-          name={ item.username || item.name }/>
+          name={ item.username || item.name }
+          current={ current }/>
       )
     })
   }
